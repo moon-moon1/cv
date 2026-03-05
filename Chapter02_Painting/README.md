@@ -51,4 +51,4 @@ while True:
 
 ## 💻 실행 화면
 
-![result](img/result.png)
+![result](img/paint_result.png)
