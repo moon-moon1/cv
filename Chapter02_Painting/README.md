@@ -44,7 +44,7 @@ pip install opencv-python numpy
 ```
 project/
 │
-├── paint.py
+├── draw.py
 ├── soccer.jpg
 ├── img/
 │   └── paint_result.png
