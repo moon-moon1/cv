@@ -42,4 +42,4 @@ img3 = np.hstack((img1, img2_3channel))
 ```
 🔗 원본 이미지와 3채널 흑백 이미지를 가로로 이어 붙여 img3을 생성합니다.
 
-![concat](img/hstack.png)
+![final](img/final.png)
