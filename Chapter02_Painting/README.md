@@ -51,4 +51,4 @@ while True:
 
 ## 💻 실행 화면
 
-<img src="img/paint_result.png" width="600">
+<img src="img/result.png" width="600">
