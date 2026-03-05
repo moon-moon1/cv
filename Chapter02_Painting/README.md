@@ -63,7 +63,7 @@ project/
 # ▶ 실행 방법 (How to Run)
 
 ```bash
-python paint.py
+python draw.py
 ```
 
 프로그램 실행 후 **마우스를 이용하여 이미지 위에 직접 그림을 그릴 수 있습니다.**
