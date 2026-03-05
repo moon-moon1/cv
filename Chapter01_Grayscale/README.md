@@ -31,7 +31,6 @@ img2 = cv.cvtColor(img1, cv.COLOR_BGR2GRAY)
 
 🎨 컬러(BGR) 이미지를 흑백(Gray) 이미지로 변환하여 img2에 저장합니다.
 
-여기는 이미지 붙힐 예정
 
 ```python
 img2_3channel = cv.cvtColor(img2, cv.COLOR_GRAY2BGR)
