@@ -23,6 +23,7 @@ pip install opencv-python numpy
 | **마우스 좌클릭 + 드래그** | 자르고 싶은 영역(ROI) 지정 |
 | **마우스 좌클릭 해제** | 영역 선택 완료 및 ROI 팝업창 생성 |
 | **키보드 `s`** | 선택한 ROI 영역을 이미지 파일로 저장 |
+![final](log/log.png)
 | **키보드 `r`** | 선택 영역 초기화 (리셋) |
 | **키보드 `q`** | 프로그램 완전 종료 |
 
@@ -43,6 +44,7 @@ def normalize_rect(ax, ay, bx, by, w, h):
 roi = base[ry0:ry1, rx0:rx1].copy()
 ```
 > ✂️ 넘파이(NumPy) 배열 슬라이싱을 이용해 원본 이미지(`base`)에서 사용자가 지정한 좌표만큼의 픽셀 데이터만 쏙 잘라내어 `roi` 변수에 저장합니다.
+> ![roi](img/roi.png)
 
 ### 3. 안전한 폴더 생성 및 타임스탬프 저장
 ```python
@@ -52,7 +54,4 @@ ts = datetime.now().strftime("%Y%m%d_%H%M%S")
 save_path = os.path.join(save_dir, f"roi_{ts}.png")
 ```
 > 💾 `os.makedirs`의 `exist_ok=True` 옵션을 통해 폴더가 없을 때만 생성하도록 안전하게 처리했습니다. 또한 덮어쓰기 방지를 위해 저장 순간의 시간을 파일명에 포함시킵니다.
-
-## 💻 실행 화면
-
-<img src="img/roi_result.png" width="700">
+![save](img/save.png)
