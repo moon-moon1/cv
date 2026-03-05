@@ -68,9 +68,8 @@ pip install opencv-python numpy
 ```
 project/
 │
-├── roi_select.py
+├── roi.py
 ├── soccer.jpg
-├── saved_roi/
 ├── img/
 │   ├── roi.png
 │   ├── log.png
@@ -80,9 +79,8 @@ project/
 
 | 파일 | 설명 |
 |-----|-----|
-| roi_select.py | 메인 실행 코드 |
+| roi.py | 메인 실행 코드 |
 | soccer.jpg | 테스트용 이미지 |
-| saved_roi | 저장된 ROI 이미지 |
 | img | README 설명용 이미지 |
 | README.md | 프로젝트 설명 |
 
@@ -91,7 +89,7 @@ project/
 # ▶ 실행 방법 (How to Run)
 
 ```bash
-python roi_select.py
+python roi.py
 ```
 
 프로그램 실행 후 마우스를 이용하여 **이미지에서 원하는 영역을 선택할 수 있습니다.**
