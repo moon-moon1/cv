@@ -52,7 +52,7 @@ os.makedirs(save_dir, exist_ok=True)
 ts = datetime.now().strftime("%Y%m%d_%H%M%S")
 save_path = os.path.join(save_dir, f"roi_{ts}.png")
 ```
-![final](log/log.png)
+![log](img/log.png)
 
 > 💾 `os.makedirs`의 `exist_ok=True` 옵션을 통해 폴더가 없을 때만 생성하도록 안전하게 처리했습니다. 또한 덮어쓰기 방지를 위해 저장 순간의 시간을 파일명에 포함시킵니다.
 ![save](img/save.png)
