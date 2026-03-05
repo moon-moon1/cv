@@ -23,7 +23,6 @@ pip install opencv-python numpy
 | **마우스 좌클릭 + 드래그** | 자르고 싶은 영역(ROI) 지정 |
 | **마우스 좌클릭 해제** | 영역 선택 완료 및 ROI 팝업창 생성 |
 | **키보드 `s`** | 선택한 ROI 영역을 이미지 파일로 저장 |
-![final](log/log.png)
 | **키보드 `r`** | 선택 영역 초기화 (리셋) |
 | **키보드 `q`** | 프로그램 완전 종료 |
 
@@ -53,5 +52,7 @@ os.makedirs(save_dir, exist_ok=True)
 ts = datetime.now().strftime("%Y%m%d_%H%M%S")
 save_path = os.path.join(save_dir, f"roi_{ts}.png")
 ```
+![final](log/log.png)
+
 > 💾 `os.makedirs`의 `exist_ok=True` 옵션을 통해 폴더가 없을 때만 생성하도록 안전하게 처리했습니다. 또한 덮어쓰기 방지를 위해 저장 순간의 시간을 파일명에 포함시킵니다.
 ![save](img/save.png)
