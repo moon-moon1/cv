@@ -107,9 +107,11 @@ undistorted = cv2.undistort(img, K, dist, None, new_K)
 ### 왜곡 보정 결과
 원본 이미지와 왜곡 보정 이미지를 좌우로 연결하여 비교하였다.
 
-![left01_compare](2_weeks/Chapter04_Calibrate/result/left01_compare.jpg)
-![compare1](result/left01_compare.jpg)
-![compare2](result/left02_compare.jpg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter04_Calibrate/result/left01_compare.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter04_Calibrate/result/left01_compare.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter04_Calibrate/result/left02_compare.jpg" width="30%">
+</p>
 
 ### 해석
 캘리브레이션을 통해 카메라 내부 행렬과 왜곡 계수를 추정할 수 있었고, 이를 사용하여 입력 이미지의 왜곡을 보정하였다.  
@@ -354,7 +356,9 @@ result = cv2.warpAffine(img, M, (w, h))
 ## 6. 최종 결과물
 
 ### 변환 결과 이미지
-![affine_result](transformed.jpg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter05_Rotation/transformed.jpg" width="80%">
+</p>
 
 ### 해석
 `cv2.getRotationMatrix2D()`를 사용하여 이미지 중심 기준 회전과 크기 조절을 동시에 수행하였다.  
@@ -511,18 +515,24 @@ for name, (x, y, w, h) in rois.items():
 ### ROI 설정 결과
 왼쪽 이미지와 오른쪽 이미지에 관심 영역(ROI)을 표시하였다.
 
-![left_roi](outputs/left_with_roi.png)
-![right_roi](outputs/right_with_roi.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter06_depth/outputs/left_with_roi.png" width="40%">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter06_depth/outputs/right_with_roi.png" width="40%">
+</p>
 
 ### disparity 시각화 결과
 disparity map은 정규화 후 컬러맵을 적용하여 시각화하였다.
 
-![disparity](outputs/disparity_color.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter06_depth/outputs/disparity_color.png" width="80%">
+</p>
 
 ## 7. 최종 결과물
 
 ### depth 시각화 결과
-![depth](outputs/depth_color.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter06_depth/outputs/depth_color.png" width="80%">
+</p>
 
 ### ROI별 평균 disparity / depth
 
