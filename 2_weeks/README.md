@@ -81,9 +81,9 @@ undistorted = cv2.undistort(img, K, dist, None, new_K)
 체크보드 이미지에서 내부 코너를 검출한 뒤 `cv2.drawChessboardCorners()`를 사용하여 시각화하였다.
 
 <p align="center">
-  <img src="[2_weeks/Chapter04_Calibrate/result/left01_corners.jpg](https://github.com/moon-moon1/cv/blob/main/2_weeks/Chapter04_Calibrate/result/left01_corners.jpg)" width="30%">
-  <img src="[2_weeks/Chapter04_Calibrate/result/left02_corners.jpg](https://github.com/moon-moon1/cv/blob/main/2_weeks/Chapter04_Calibrate/result/left02_corners.jpg)" width="30%">
-  <img src="[2_weeks/Chapter04_Calibrate/result/left03_corners.jpg](https://github.com/moon-moon1/cv/blob/main/2_weeks/Chapter04_Calibrate/result/left03_corners.jpg)" width="30%">
+  <img src="2_weeks/Chapter04_Calibrate/result/left01_corners.jpg" width="30%">
+  <img src="2_weeks/Chapter04_Calibrate/result/left02_corners.jpg" width="30%">
+  <img src="2_weeks/Chapter04_Calibrate/result/left03_corners.jpg" width="30%">
 </p>
 
 > 코너 검출에 실패한 이미지는 캘리브레이션에서 제외하였다.
@@ -525,24 +525,17 @@ disparity map은 정규화 후 컬러맵을 적용하여 시각화하였다.
 ![depth](outputs/depth_color.png)
 
 ### ROI별 평균 disparity / depth
-아래에 실행 결과를 붙여넣으면 된다.
 
 ```text
-여기에 ROI별 평균 disparity / depth 결과 붙여넣기
-
-예시:
-=== ROI별 평균 Disparity / Depth ===
 Painting
-  Mean Disparity : ...
-  Mean Depth     : ... m
-
+  Mean Disparity : 18.5406
+  Mean Depth     : 4.5375 m
 Frog
-  Mean Disparity : ...
-  Mean Depth     : ... m
-
+  Mean Disparity : 33.6647
+  Mean Depth     : 2.5069 m
 Teddy
-  Mean Disparity : ...
-  Mean Depth     : ... m
+  Mean Disparity : 22.4311
+  Mean Depth     : 3.8894 m
 ```
 
 ### 가까운 영역 / 먼 영역 해석
