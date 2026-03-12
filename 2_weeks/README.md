@@ -81,9 +81,9 @@ undistorted = cv2.undistort(img, K, dist, None, new_K)
 체크보드 이미지에서 내부 코너를 검출한 뒤 `cv2.drawChessboardCorners()`를 사용하여 시각화하였다.
 
 <p align="center">
-  <img src="2_weeks/Chapter04_Calibrate/result/left01_corners.jpg" width="30%">
-  <img src="2_weeks/Chapter04_Calibrate/result/left02_corners.jpg" width="30%">
-  <img src="2_weeks/Chapter04_Calibrate/result/left03_corners.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter04_Calibrate/result/left01_corners.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter04_Calibrate/result/left02_corners.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter04_Calibrate/result/left03_corners.jpg" width="30%">
 </p>
 
 > 코너 검출에 실패한 이미지는 캘리브레이션에서 제외하였다.
