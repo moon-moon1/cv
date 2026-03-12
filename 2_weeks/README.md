@@ -80,9 +80,9 @@ undistorted = cv2.undistort(img, K, dist, None, new_K)
 ### 체크보드 코너 검출 결과
 체크보드 이미지에서 내부 코너를 검출한 뒤 `cv2.drawChessboardCorners()`를 사용하여 시각화하였다.
 
-![corners1](result/left01_corners.jpg)
-![corners2](result/left02_corners.jpg)
-![corners3](result/left03_corners.jpg)
+![corners1](2_weeks/Chapter04_Calibrate/result/left01_corners.jpg)
+![corners2](2_weeks/Chapter04_Calibrate/result/left02_corners.jpg)
+![corners3](2_weeks/Chapter04_Calibrate/result/left03_corners.jpg)
 
 > 코너 검출에 실패한 이미지는 캘리브레이션에서 제외하였다.
 
@@ -91,13 +91,15 @@ undistorted = cv2.undistort(img, K, dist, None, new_K)
 ### Camera Matrix
 
 ```text
-여기에 Camera Matrix K 결과 붙여넣기
+[[536.07345314   0.         342.37046827]
+ [  0.         536.01636274 235.53687064]
+ [  0.           0.           1.        ]]
 ```
 
 ### Distortion Coefficients
 
 ```text
-여기에 Distortion Coefficients 결과 붙여넣기
+[[-0.26509039 -0.0467422   0.00183302 -0.00031469  0.25231221]]
 ```
 
 ### 왜곡 보정 결과
@@ -542,15 +544,10 @@ Teddy
 ```
 
 ### 가까운 영역 / 먼 영역 해석
-아래에 실행 결과를 붙여넣으면 된다.
 
 ```text
-여기에 가까운 영역 / 먼 영역 결과 붙여넣기
-
-예시:
-=== 해석 ===
-가장 가까운 영역: ...
-가장 먼 영역: ...
+가장 가까운 영역: Frog
+가장 먼 영역: Painting
 ```
 
 ### 해석
