@@ -103,6 +103,7 @@ undistorted = cv2.undistort(img, K, dist, None, new_K)
 ### 왜곡 보정 결과
 원본 이미지와 왜곡 보정 이미지를 좌우로 연결하여 비교하였다.
 
+![left01_compare](2_weeks/Chapter04_Calibrate/result/left01_compare.jpg)
 ![compare1](result/left01_compare.jpg)
 ![compare2](result/left02_compare.jpg)
 
