@@ -462,16 +462,6 @@ cv2.destroyAllWindows()
 
 ### Depth
 disparity를 이용해 계산한 실제 거리 정보이다.  
-본 과제에서는 다음 공식을 사용하였다.
-
-\[
-Z = \frac{fB}{d}
-\]
-
-- `f`: focal length
-- `B`: baseline
-- `d`: disparity
-
 depth 값이 클수록 더 먼 물체로 해석할 수 있다.
 
 ## 4. 사용한 주요 함수
