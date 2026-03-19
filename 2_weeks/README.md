@@ -357,7 +357,7 @@ result = cv2.warpAffine(img, M, (w, h))
 
 ### 변환 결과 이미지
 <p align="center">
-  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter05_Rotation/transformed.jpg" width="70%">
+  <img src="https://raw.githubusercontent.com/moon-moon1/cv/main/2_weeks/Chapter05_Rotation/transform.png" width="70%">
 </p>
 
 ### 해석
