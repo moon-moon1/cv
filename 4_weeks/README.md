@@ -415,8 +415,8 @@ warped[0:h2, 0:w2] = img2
 호모그래피 행렬을 이용하여 첫 번째 이미지를 두 번째 이미지 기준 좌표계로 변환하고, 두 번째 이미지를 기준 영상으로 배치하였다.
 
 <p align="center">
-  <img src="result/homo1.png" width="45%">
-  <img src="result/homo2.png" width="45%">
+  <img src="result/homo1.png" width="80%">
+  <img src="result/homo2.png" width="80%">
 </p>
 
 ### 해석
